@@ -20,15 +20,23 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import next from "./tech/next.jpeg";
+import angular from "./tech/angular.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import berexia from "./company/berexia_logo.jpeg";
+import cegid from "./company/cegid.png";
+import cogitas from "./company/cogitas.jpeg";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+
+import cv from "./CV__ENG_MOAADMSELLEK_VFF.docx.pdf";
+
 
 export {
   logo,
@@ -36,12 +44,18 @@ export {
   creator,
   mobile,
   web,
+  cv,
   github,
+  cegid,
+  berexia,
   menu,
   close,
   css,
   docker,
   figma,
+  cogitas,
+  angular,
+  next,
   git,
   html,
   javascript,

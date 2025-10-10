@@ -15,8 +15,11 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
+  cegid,
+  berexia,
+  cogitas,
+  next,
+  angular,
   tesla,
   shopify,
   carrent,
@@ -50,11 +53,11 @@ const services = [
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Frontend Optimization Specialist",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "API Integration Specialist",
     icon: creator,
   },
 ];
@@ -81,6 +84,14 @@ const technologies = [
     icon: reactjs,
   },
   {
+    name: "Angular",
+    icon: angular,
+  },
+  {
+    name: "Next JS",
+    icon: next,
+  },
+  {
     name: "Redux Toolkit",
     icon: redux,
   },
@@ -91,14 +102,6 @@ const technologies = [
   {
     name: "Node JS",
     icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
   },
   {
     name: "git",
@@ -116,57 +119,45 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Front-end Engineer ReactJs/Angular",
+    company_name: "Cegid",
+    icon: cegid,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
     date: "Jan 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Developing and maintaining web applications using React.js and Angular and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Resolved critical production bugs, enhancing overall application stability and reducing service interruptions.",
+      "Managed application state using NgRx , RxJs and Redux, increasing the efficiency of state management.",
+      "Participated in code reviews and pair programming, promoting knowledge sharing and continuous team improvement.",
     ],
   },
+  {
+    title: "Front-end Engineer ReactJs/Angular",
+    company_name: "Berexia",
+    icon: berexia,
+    iconBg: "#E6DEDD",
+    date: "Feb 2021 - Jan 2023",
+    points: [
+      "Developed and maintained a customer insurance management system for SCOR France, enabling seamless addition, modification, and deletion of insurance policies, streamlining policy management.",
+      "Developed an innovative ESG data management platform that improved user experience and facilitated transparent communication of ESG efforts to stakeholders.",
+      "Implemented a time tracking and validation system for the FRED Web project, reducing scheduling errors and improving personnel and resource management for FAYAT client.",
+      "Collaborated with back-end developers to create and consume REST APIs, reducing integration issues and improving development workflow.",
+    ],
+  },
+  {
+    title: "Software engineer intern",
+    company_name: "Cogitas Solutions",
+    icon: cogitas,
+    iconBg: "#383E56",
+    date: "Jully 2018 - Sep 2018",
+    points: [
+      "Design and implementation of a Stock Management application.",
+      "System developed with rigorous controls for scalability and security.",
+      "Web application state management with Redux.",
+      "Technologies : ReactJs, Redux.",
+    ],
+  }
 ];
 
 const testimonials = [

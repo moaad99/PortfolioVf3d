@@ -30,9 +30,10 @@ import berexia from "./company/berexia_logo.jpeg";
 import cegid from "./company/cegid.png";
 import cogitas from "./company/cogitas.jpeg";
 
-import carrent from "./carrent.png";
+import carrent from "./image.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import gem from "./gemii.png";
 
 import cv from "./CV__ENG_MOAADMSELLEK_VFF.docx.pdf";
 
@@ -71,4 +72,5 @@ export {
   carrent,
   jobit,
   tripguide,
+  gem
 };

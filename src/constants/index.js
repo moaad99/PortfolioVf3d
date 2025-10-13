@@ -188,16 +188,16 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Estate Burger Kitchen",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "The landing page provides an immediate, visual introduction to the restaurant's best and most appealing burgers.Its primary goal is to minimize steps and encourage the user to take the next action, such as viewing the menu.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "javascript",
         color: "green-text-gradient",
       },
       {
@@ -206,7 +206,7 @@ const projects = [
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/moaad99/Estate-burger-kitchenVf",
   },
   {
     name: "Job IT",

@@ -26,17 +26,22 @@ const ProjectCard = ({
         }}
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
       >
-        <div className='relative w-full h-[230px]'>
+        <div className='relative w-full h-[230px] group overflow-hidden rounded-2xl'>
           <img
             src={image}
-            alt='project_image'
-            className='w-full h-full object-cover rounded-2xl'
+            alt={`${name} project screenshot`}
+            className='w-full h-full object-cover rounded-2xl transition-transform duration-500 group-hover:scale-110'
+            loading="lazy"
           />
 
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+          <div className='absolute inset-0 flex justify-end m-3 card-img_hover opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
             <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+              onClick={() => window.open(source_code_link, "_blank", "noopener,noreferrer")}
+              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer hover:scale-110 transition-transform'
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => e.key === "Enter" && window.open(source_code_link, "_blank", "noopener,noreferrer")}
+              aria-label={`View ${name} source code`}
             >
               <img
                 src={github}
@@ -97,4 +102,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "projects");

@@ -22,10 +22,6 @@ import typescript from "./tech/typescript.png";
 import next from "./tech/next.jpeg";
 import angular from "./tech/angular.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
 import berexia from "./company/berexia_logo.jpeg";
 import cegid from "./company/cegid.png";
 import cogitas from "./company/cogitas.jpeg";
@@ -66,10 +62,6 @@ export {
   redux,
   tailwind,
   typescript,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
   luxe,
   carrent,
   jobit,

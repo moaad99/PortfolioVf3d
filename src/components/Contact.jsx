@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
@@ -6,6 +6,11 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import SocialLinks from "./SocialLinks";
+
+const SERVICE_ID = import.meta.env.VITE_APP_EMAILJS_SERVICE_ID;
+const TEMPLATE_ID = import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID;
+const PUBLIC_KEY = import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY;
 
 const Contact = () => {
   const formRef = useRef();
@@ -17,6 +22,12 @@ const Contact = () => {
 
   const [loading, setLoading] = useState(false);
 
+  useEffect(() => {
+    if (PUBLIC_KEY) {
+      emailjs.init({ publicKey: PUBLIC_KEY });
+    }
+  }, []);
+
   const handleChange = (e) => {
     const { target } = e;
     const { name, value } = target;
@@ -27,41 +38,40 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    
+    if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
+      alert(
+        "Email service is not configured. Please add VITE_APP_EMAILJS_SERVICE_ID, VITE_APP_EMAILJS_TEMPLATE_ID, and VITE_APP_EMAILJS_PUBLIC_KEY to your .env file. See .env.example for setup."
+      );
+      return;
+    }
+
     setLoading(true);
 
-    emailjs
-      .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+    try {
+      await emailjs.send(
+        SERVICE_ID,
+        TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Moaad Msellek",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: import.meta.env.VITE_APP_CONTACT_EMAIL || "moaadmsellek@gmail.com",
           message: form.message,
-        },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
-
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
-
-          alert("Ahh, something went wrong. Please try again.");
         }
       );
+      setLoading(false);
+      alert("Thank you. I will get back to you as soon as possible.");
+      setForm({ name: "", email: "", message: "" });
+    } catch (error) {
+      setLoading(false);
+      console.error("EmailJS error:", error);
+      alert(
+        `Failed to send: ${error?.text || error?.message || "Please check your EmailJS setup and try again."}`
+      );
+    }
   };
 
   return (
@@ -74,6 +84,11 @@ const Contact = () => {
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
+
+        <div className="mt-4 flex flex-col gap-2">
+          <p className="text-secondary text-sm">Connect with me</p>
+          <SocialLinks />
+        </div>
 
         <form
           ref={formRef}

@@ -20,8 +20,6 @@ import {
   cogitas,
   next,
   angular,
-  tesla,
-  shopify,
   carrent,
   luxe,
   jobit,
@@ -40,6 +38,19 @@ export const navLinks = [
   {
     id: "contact",
     title: "Contact",
+  },
+];
+
+export const socialLinks = [
+  {
+    name: "GitHub",
+    url: "https://github.com/moaad99",
+    icon: "github",
+  },
+  {
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/moaad-msellek-b4a602194/",
+    icon: "linkedin",
   },
 ];
 

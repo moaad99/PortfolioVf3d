@@ -24,6 +24,8 @@ import {
   luxe,
   jobit,
   tripguide,
+  tradex,
+  neural
 } from "../assets";
 
 export const navLinks = [
@@ -230,6 +232,10 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
+        name: "Next Js",
+        color: "blue-text-gradient",
+      },
+      {
         name: "restapi",
         color: "green-text-gradient",
       },
@@ -239,15 +245,19 @@ const projects = [
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/moaad99/job-it",
   },
    {
-    name: "Estate Burger Kitchen",
+    name: "TRADE X",
     description:
-      "The landing page provides an immediate, visual introduction to the restaurant's best and most appealing burgers.Its primary goal is to minimize steps and encourage the user to take the next action, such as viewing the menu.",
+      "TRADE X is a modern fintech dashboard built with React and Next.js that simulates a professional trading terminal. It features real-time market data simulation, interactive charts, a customizable watchlist, and a trading order panel.",
     tags: [
       {
         name: "react",
+        color: "blue-text-gradient",
+      },
+       {
+        name: "Next Js",
         color: "blue-text-gradient",
       },
       {
@@ -259,8 +269,8 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/moaad99/Estate-burger-kitchenVf",
+    image: tradex,
+    source_code_link: "https://github.com/moaad99/TradeX",
   },
     {
     name: "Trip Guide",
@@ -281,7 +291,49 @@ const projects = [
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/moaad99/AI-Trip-guide",
+  },
+  {
+    name: "NeuralArc",
+    description:
+      "NeuralArc is a modern web application built with React and Next.js that simulates a real-world AI software platform. It features a ChatGPT-style interface, analytics dashboards, prompt management, and team workspace tools.",
+    tags: [
+      {
+        name: "nextJs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: neural,
+    source_code_link: "https://github.com/moaad99/AI-SaaS-Dashboard",
+  },
+  {
+    name: "Estate Burger Kitchen",
+    description:
+      "The landing page provides an immediate, visual introduction to the restaurant's best and most appealing burgers.Its primary goal is to minimize steps and encourage the user to take the next action, such as viewing the menu.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: carrent,
+    source_code_link: "https://github.com/moaad99/Estate-burger-kitchenVf",
   },
 ];
 

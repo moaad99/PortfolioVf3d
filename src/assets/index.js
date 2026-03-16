@@ -31,6 +31,8 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import gem from "./gemii.png";
 import luxe from "./luxe.png";
+import tradex from "./tradex.png";
+import neural from "./neural.png";
 
 import cv from "./CV__ENG_MOAADMSELLEK_VFF.docx.pdf";
 
@@ -64,7 +66,9 @@ export {
   typescript,
   luxe,
   carrent,
+  tradex,
   jobit,
   tripguide,
-  gem
+  gem,
+  neural
 };

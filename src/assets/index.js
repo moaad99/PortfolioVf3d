@@ -34,6 +34,7 @@ import carrent from "./image.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import gem from "./gemii.png";
+import luxe from "./luxe.png";
 
 import cv from "./CV__ENG_MOAADMSELLEK_VFF.docx.pdf";
 
@@ -69,6 +70,7 @@ export {
   shopify,
   starbucks,
   tesla,
+  luxe,
   carrent,
   jobit,
   tripguide,

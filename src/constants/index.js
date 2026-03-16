@@ -23,6 +23,7 @@ import {
   tesla,
   shopify,
   carrent,
+  luxe,
   jobit,
   tripguide,
 } from "../assets";
@@ -188,9 +189,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Estate Burger Kitchen",
+    name: "LUXE PARFUMS",
     description:
-      "The landing page provides an immediate, visual introduction to the restaurant's best and most appealing burgers.Its primary goal is to minimize steps and encourage the user to take the next action, such as viewing the menu.",
+      "Discover our curated collection of the world's finest luxury perfumes. Each scent tells a story of elegance, passion, and timeless sophistication.",
     tags: [
       {
         name: "react",
@@ -205,8 +206,8 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/moaad99/Estate-burger-kitchenVf",
+    image: luxe,
+    source_code_link: "https://github.com/moaad99/LUXE-PARF",
   },
   {
     name: "Job IT",
@@ -229,7 +230,28 @@ const projects = [
     image: jobit,
     source_code_link: "https://github.com/",
   },
-  {
+   {
+    name: "Estate Burger Kitchen",
+    description:
+      "The landing page provides an immediate, visual introduction to the restaurant's best and most appealing burgers.Its primary goal is to minimize steps and encourage the user to take the next action, such as viewing the menu.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: carrent,
+    source_code_link: "https://github.com/moaad99/Estate-burger-kitchenVf",
+  },
+    {
     name: "Trip Guide",
     description:
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
